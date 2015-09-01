@@ -19,7 +19,7 @@ public class SimpleObserver implements Observer<String> {
 
     @Override
     public void onNext(String string) {
-        System.out.println(string);
+        System.out.println(string +"(Observed by : "+ Thread.currentThread().getName() +")");
 
     }
 }
